@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="ordenando.css" />
+  </head>
+  <body>
+    <h1>Ordenando Valores</h1>
+    <label for="valor">Valor</label>
+    <input type="number" id="valor" placeholder="Digite um valor" />
+    <div>
+      <button onClick="add()" id="btnAdd">Adicionar</button>
+    </div>
+
+    <hr />
+
+    <select id="metodos">
+      <option value="bubble" selected>Bubble Sort</option>
+      <option value="selection">Selection Sort</option>
+      <option value="quick">Quick Sort</option>
+    </select>
+    <div>
+      <button onClick="ordenar()" id="btnOrd">Ordenar</button>
+      <button onClick="misturar()" id="btnMist">Misturar</button>
+    </div>
+    <hr />
+
+    <ul id="valores"></ul>
+
+    <script src="ordenando.js"></script>
+  </body>
+</html>
